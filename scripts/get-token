@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+import os, sys
+import pyperclip
+
+if __name__=='__main__':
+    available_tokens = os.listdir('/home/nhan/work/tokens')
+    if sys.argv[1] not in available_tokens:
+        print('Availabel tokens are:')
+        [print('\t',token) for token in available_tokens]
+    else:
+        with open(os.path.join('/home/nhan/work/tokens', sys.argv[1]), 'r') as f:
+            pyperclip.copy(f.read().strip())

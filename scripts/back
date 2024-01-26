@@ -1,0 +1,16 @@
+back() {
+    if [ -z "$1" ];
+    then
+        num=1;
+    else
+        num=$1;
+    fi
+
+    for (( i=0; i<$num; i++ ))
+    do
+        dest="$dest../"
+    done
+    cd $dest
+    unset dest
+    unset num
+}

@@ -1,0 +1,7 @@
+nbcontent='{
+	"cells": [],
+	"metadata": {},
+	"nbformat": 4,
+	"nbformat_minor": 5
+}'
+echo "$nbcontent" > $1.ipynb

@@ -1,0 +1,5 @@
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>pf', builtin.find_files, {desc = '[P]roject [F]iles'})
+vim.keymap.set('n', '<leader>pg', builtin.git_files, {desc = '[P]roject Git'})
+vim.keymap.set('n', '<leader>ps', builtin.live_grep, {desc = '[P]roject [S]tring'})
+vim.keymap.set('n', '<leader>oh', builtin.help_tags, {desc='[O]pen [H]elp'})
